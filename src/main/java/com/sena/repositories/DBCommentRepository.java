@@ -1,7 +1,9 @@
 package com.sena.repositories;
 
 import com.sena.Comment;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public class DBCommentRepository implements CommentRepository {
     @Override
     public void storeComment(Comment comment) {
